@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #FFFEF7;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#root {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.app-header {
+  text-align: center;
+  color: #2C2416;
+  margin-bottom: 40px;
+  padding: 30px 20px;
+}
+
+.app-header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2C2416;
+}
+
+.app-header p {
+  font-size: 1.2rem;
+  color: #8B7355;
+  font-weight: 400;
+}
+
+.recipe-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+  padding: 20px 0;
+}
+
+.empty-state {
+  text-align: center;
+  color: #8B7355;
+  padding: 60px 20px;
+  margin-top: 40px;
+}
+
+.empty-state h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #2C2416;
+  font-weight: 600;
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+  color: #8B7355;
+}
+
+@media (max-width: 768px) {
+  .recipe-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .app-header p {
+    font-size: 1rem;
+  }
+
+  .basepage-container {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+.empty-state {
+  text-align: center;
+  color: #8B7355;
+  padding: 60px 20px;
+  margin-top: 40px;
+}
+
+.empty-state h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #2C2416;
+  font-weight: 600;
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+  color: #8B7355;
+}

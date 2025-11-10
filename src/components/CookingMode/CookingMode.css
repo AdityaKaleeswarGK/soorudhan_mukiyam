@@ -1,0 +1,260 @@
+/* Cooking Mode Styles */
+.cooking-mode-modal .modal-content {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.cooking-mode-header {
+  background: linear-gradient(135deg, #FFD60A 0%, #FFCC00 100%);
+  border: none;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cooking-mode-title {
+  color: #2C2416;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.cooking-mode-body {
+  padding: 0;
+  background: #FFFEF9;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Flashcard Animation */
+.flashcard {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.flashcard-content {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.slide-in {
+  animation: slideIn 0.4s ease-out;
+}
+
+.slide-out {
+  animation: slideOut 0.3s ease-in;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50px) scale(0.95);
+  }
+}
+
+/* Ingredients Card */
+.ingredients-card {
+  background: linear-gradient(135deg, #FFF9C4 0%, #FFE5B4 100%);
+}
+
+.flashcard-title {
+  color: #2C2416;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.ingredient-item {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ingredient-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.ingredient-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2C2416;
+}
+
+.ingredient-amount {
+  font-size: 0.95rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Instruction Card */
+.instruction-card {
+  background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+}
+
+.instruction-header {
+  margin-bottom: 25px;
+}
+
+.instruction-number {
+  background: #4CAF50;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.instruction-text {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #2C2416;
+  margin-bottom: 30px;
+  font-weight: 500;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Timer */
+.timer-container {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timer-display {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #4CAF50;
+  margin-bottom: 10px;
+  font-family: 'Courier New', monospace;
+}
+
+.timer-label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.timer-complete {
+  background: #FFD60A;
+  color: #2C2416;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Buttons */
+.proceed-button,
+.next-button,
+.finish-button {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+  width: 100%;
+  max-width: 300px;
+}
+
+.proceed-button:hover,
+.next-button:hover:not(:disabled),
+.finish-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.proceed-button:active,
+.next-button:active:not(:disabled),
+.finish-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.next-button:disabled,
+.finish-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.finish-button {
+  background: linear-gradient(135deg, #FFD60A 0%, #FFCC00 100%);
+  color: #2C2416;
+  box-shadow: 0 4px 15px rgba(255, 214, 10, 0.3);
+}
+
+.finish-button:hover:not(:disabled) {
+  box-shadow: 0 6px 20px rgba(255, 214, 10, 0.4);
+}
+
+.instruction-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

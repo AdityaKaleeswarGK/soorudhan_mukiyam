@@ -1,0 +1,249 @@
+.basepage-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #FFFEF9;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(255, 214, 10, 0.08);
+  border: 1px solid #F5E6D3;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.basepage-container:hover {
+  box-shadow: 0 4px 20px rgba(255, 214, 10, 0.15);
+  transform: translateY(-2px);
+  border-color: #FFE5B4;
+}
+.basepage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px; /* Adjust this value as needed */
+  }
+  .basepage h2 {
+    margin-right: 10px;
+    color: #2C2416;
+    font-weight: 600;
+  }
+
+  .add-button {
+    background: #FFD60A;
+    color: #2C2416;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(255, 214, 10, 0.35);
+  }
+  .add-button:hover {
+    background: #FFCC00;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 214, 10, 0.45);
+  }
+  .add-button:active {
+    transform: translateY(0);
+    background: #E6C200;
+  }
+  /* style.css */
+.custom-modal {
+    transition: all 0.3s ease;
+  }
+  /* style.css */
+.modal-header {
+    background: #FFFEF9;
+    color: #2C2416;
+    border-bottom: 1px solid #F5E6D3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+  }
+  
+  .modal-title {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .modal-body {
+    padding: 25px;
+    max-height: 70vh;
+    overflow-y: auto;
+    background: #FFFEF9;
+  }
+
+  .modal-footer {
+    background: #FFFEF9;
+    border-top: 1px solid #F5E6D3;
+    padding: 15px 20px;
+    justify-content: center;
+  }
+
+  .modal-footer .add-button {
+    margin: 0;
+  }
+  /* style.css */
+.form-group {
+    margin-bottom: 20px; /* Add spacing between form groups */
+  }
+  
+  .form-label {
+    font-weight: bold; /* Make the form labels bold */
+  }
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #E8DCC6;
+    border-radius: 6px;
+    background: #FFFFFF;
+    transition: all 0.2s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #FFD60A;
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(255, 214, 10, 0.15);
+    background: #FFFFFF;
+  }
+  
+  textarea.form-control {
+    resize: vertical; /* Allow vertical resizing of textarea */
+  }
+  .ind-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .ind-container input {
+    flex: 1;
+  }
+  
+  .bind {
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #FFD60A;
+    color: #2C2416;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  .bind:hover {
+    background: #FFCC00;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(255, 214, 10, 0.4);
+  }
+  /* Styles for the ordered list */
+/* Styles for the ordered list */
+.instruction-list {
+  list-style-type: none;
+  counter-reset: instruction-counter;
+  padding: 0;
+  margin-left: 0; /* Move the list to the left */
+}
+
+/* Styles for each list item */
+.instruction-item {
+  position: relative;
+  margin-bottom: 20px; /* Add margin bottom for spacing between items */
+}
+
+/* Styles for the number circle */
+.instruction-item:before {
+  content: counter(instruction-counter);
+  counter-increment: instruction-counter;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background: #FFD60A;
+  color: #2C2416;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(255, 214, 10, 0.35);
+}
+
+/* Add margin between separate ingredients */
+.instruction-item + .instruction-item {
+  margin-top: 10px; /* Add margin between separate items */
+}
+
+  p {
+  word-wrap: break-word; /* Enable word-wrap to prevent overflow */
+  color: #333; /* Set text color */
+  font-size: 1rem; /* Set font size */
+  transition: color 0.3s ease; /* Add transition for color change */
+}
+
+/* CSS for Ingredients Header */
+h4 {
+  color: #555; /* Set text color */
+  font-size: 1.2rem; /* Set font size */
+  margin-bottom: 10px; /* Add margin below the header */
+}
+
+/* Speech section styles */
+.speech-section {
+  margin-bottom: 20px;
+}
+
+.speech-section h4 {
+  color: #2C2416;
+  margin-bottom: 10px;
+}
+
+.mode-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 214, 10, 0.45) !important;
+}
+
+.mode-button:active {
+  transform: translateY(0);
+}
+
+/* Waveform Animation Styles */
+.waveform-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.waveform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  height: 60px;
+}
+
+.waveform-bar {
+  transition: height 0.1s ease;
+}
+
+@keyframes waveform-animation {
+  0%, 100% {
+    transform: scaleY(0.3);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+/* Smooth waveform animation */
+.waveform-bar:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+
+.waveform-bar:nth-child(even) {
+  animation-duration: 0.8s;
+}
